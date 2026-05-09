@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Regisztráció</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <?php if(isset($uzenet)) { ?>
-            <h1><?= $uzenet ?></h1>
-            <?php if($ujra) { ?>
-                <a href="belepes">Próbálja újra!</a>
-            <?php } ?>
-        <?php } ?>
-    </body>  
-</html>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L,QSA] 

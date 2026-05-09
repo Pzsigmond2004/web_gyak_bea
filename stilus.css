@@ -1,31 +1,70 @@
-<?php
-$ablakcim = array(
-    'cim' => 'Mini honlap Kft.',
-);
+header {
+    border-radius: 10px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+}
 
-$fejlec = array(
-    'kepforras' => 'logo.png',
-    'kepalt' => 'logo',
-	'cim' => 'Mini honlap',
-	'motto' => ''
-);
+header img {
+    float: left;
+    margin: 20px 10px 0px 10px;
+}
 
-$lablec = array(
-    'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'Mini honlap Kft.'
-);
+div#wrapper {
+    margin: 10px;
+}
 
-$oldalak = array(
-	'/' => array('fajl' => 'cimlap', 'szoveg' => 'Címlap', 'menun' => array(1,1)),
-	'bemutatkozas' => array('fajl' => 'bemutatkozas', 'szoveg' => 'Bemutatkozás', 'menun' => array(1,1)),
-	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat', 'menun' => array(1,1)),
-	'cikkek' => array('fajl' => 'cikkek', 'szoveg' => 'Cikkek', 'menun' => array(1,1)),
-    'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'Táblázat', 'menun' => array(1,1)),
-    'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
-    'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
-    'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
-    'regisztral' => array('fajl' => 'regisztral', 'szoveg' => '', 'menun' => array(0,0))
-);
+aside {
+    display: table-cell;
+    vertical-align: top;
+}
 
-$hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
-?>
+nav {
+    margin: 0px 10px 0px 0px;
+    top: 0px;
+    border-radius: 10px;
+    background-color: #FF6600;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+nav ul li {
+    padding: 0px 15px;;
+}
+
+nav ul li.active {
+    border-right: 5px solid blue;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: blue;
+}
+
+div#content {
+    display: table-cell;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #99FFCC;
+    padding: 15px;
+}
+
+div#content img{
+    float: right;
+    width: 20em;
+    height: auto;
+    margin: 0 0 15px 15px;
+    padding: 3px;
+    border: 3px solid blue;
+}
+
+footer {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: #CC99FF;
+}
