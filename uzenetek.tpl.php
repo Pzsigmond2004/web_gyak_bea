@@ -45,7 +45,6 @@ try {
       <tr>
         <td>
           <?php
-          // ✅ FELADAT SZERINTI LOGIKA
           if ($uzenet['user_id'] === null) {
               echo "Vendég";
           } else {
